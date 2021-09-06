@@ -1,0 +1,25 @@
+.button{
+  position: relative;
+  button{
+      background-color: #ccc;
+      padding: 12px 15px;
+      border: none;
+      font-weight: bold;
+      font-size: 16px;
+      line-height:100%;
+      text-align: center;
+      color: #333;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        background-color: #000;
+        color: #fff;  
+      };
+      &:disabled{
+        background-color: #eee;
+        color: #999;
+      }
+    }
+}

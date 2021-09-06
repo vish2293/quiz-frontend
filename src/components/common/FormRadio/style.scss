@@ -1,0 +1,38 @@
+.radio{
+    position: relative;
+    margin-bottom: 15px;
+    input[type="radio"]{
+        position:absolute;
+        opacity: 0;
+        margin: 0;
+        z-index: -1;
+        &:checked{
+            + label{
+                &:before{
+                    background-color: #ccc;
+                    border-color: var(--blue);
+                    box-shadow: 0 0 0px 3px #fff inset;
+                    transition: all 0.5s ease;
+             }  
+            }
+        }
+    }
+    > label{
+        position: relative;
+        cursor: pointer;
+        padding-left: 25px;
+        &:before{
+            transition: all 0.5s ease;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 3px;
+            height: 17px;
+            width: 17px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+        }
+        
+    }
+    
+}
